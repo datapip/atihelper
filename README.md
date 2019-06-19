@@ -9,7 +9,7 @@ import atihelper
 # or an apikey retrieved from the AT Internet API Account interface - it is mandatory to indicate the used
 # authentification method by either "header:" or "apikey:" prefix.
 auth = "header:a1B2c3"
-token = "apikey:ab-c12-3"
+# auth = "apikey:ab-c12-3"
 
 # Requested API can be parameter string or dictionary
 params = "columns={d_visit_id,m_page_loads}&sort={-m_page_loads}&space={s:123456}&period={D:{start:'2018-12-31',end:'2018-12-31'}}"
