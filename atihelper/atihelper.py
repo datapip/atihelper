@@ -137,7 +137,7 @@ class Request:
         if(self.allrows == True):
             # get amount of rows and calculate amount of pages whith equals the amount of api calls
             rowdata = json.loads(self.get_rows("json").text)
-            if rowdata["ErrorCode"]:
+            if rowdata.get("ErrorCode"):
                 return [rowdata]
             rows = int(rowdata["RowCounts"][0]["RowCount"])   
             pages = int(math.ceil(rows / 10000))
